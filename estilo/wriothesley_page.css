@@ -1,26 +1,46 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
+    
 }
 
 :root {
     --cor-fundo: #1B1E2B;
+    --cor01: #818181;
+    --fonte-normal: "Lexend", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: var(--cor-fundo);
+    font-family: var(--fonte-normal);
+    color: white;
 }
 
+h1 {
+    font-family: var(--fonte-normal);
+    font-weight: 400;
+}
 
+h2 {
+    font-family: var(--fonte-normal);
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--fonte-normal);
+    font-weight: 400;
+}
+
+p {
+    padding-left: 10px;
+}
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: var(--cor01);
+    padding: 9px;
     text-align: center;
 }
 
@@ -29,13 +49,71 @@ header img {
     height: 70px;
 }
 
-h1{
-    text-align: right;
-    color: white;
+main {
+    display: flex;
+}
+img {
+    width: 100px;
 }
 
-.img-fundo {
-    max-width: 800px;
-    max-height: 800px;
+aside {
+    width: 30vw;
+    height: 90vh;
+    background-image: url("/imagens/Personagem_Wriothesley_Desejo.webp");
+    background-position: center center;
+}
+
+section.conteudo {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+div.caixa-build {
+    width: 48vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    column-gap: 10px;
+}
+div > section.caixa {
+    width: 48%;
+    border: 1px solid white;
+}
+
+section.caixa > h2 {
+    padding-left: 10px;
+    padding-bottom: 8px;
+}
+
+section.caixa > h3 {
+    padding-left: 10px;
+    padding-bottom: 8px;
+}
+
+
+
+div > section {
+    width: 48%;
+}
+
+article {
+    width: 19vw;
+}
+
+article > h1 {
+    width: 100%;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    text-align: right;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+article > p {
+    text-align: justify;
+    padding-right: 10px;
 }
 
