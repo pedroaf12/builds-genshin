@@ -59,7 +59,7 @@ img {
 aside {
     width: 30vw;
     height: 90vh;
-    background-image: url("/imagens/Personagem_Wriothesley_Desejo.webp");
+    background-image: url("../imagens/Personagem_Wriothesley_Desejo.webp");
     background-position: center center;
 }
 
