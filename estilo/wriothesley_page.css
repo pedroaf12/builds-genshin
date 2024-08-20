@@ -61,6 +61,7 @@ aside {
     height: 90vh;
     background-image: url("../imagens/Personagem_Wriothesley_Desejo.webp");
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
 section.conteudo {
